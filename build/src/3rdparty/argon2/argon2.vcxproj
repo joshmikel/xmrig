@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D5C6870A-1A2E-386A-AD46-5906437340DF}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>argon2</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\xmrig-6.16.2\build\src\3rdparty\argon2\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">argon2.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">argon2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\xmrig-6.16.2\build\src\3rdparty\argon2\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">argon2.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">argon2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\xmrig-6.16.2\build\src\3rdparty\argon2\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">argon2.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">argon2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\xmrig-6.16.2\build\src\3rdparty\argon2\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">argon2.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">argon2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\3rdparty\argon2\..\..;C:\xmrig-6.16.2\src\3rdparty\argon2\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\3rdparty\argon2\..\..;C:\xmrig-6.16.2\src\3rdparty\argon2\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;CMAKE_INTDIR="Debug";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\3rdparty\argon2\..\..;C:\xmrig-6.16.2\src\3rdparty\argon2\lib;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\3rdparty\argon2\..\..;C:\xmrig-6.16.2\src\3rdparty\argon2\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\3rdparty\argon2\..\..;C:\xmrig-6.16.2\src\3rdparty\argon2\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\3rdparty\argon2\..\..;C:\xmrig-6.16.2\src\3rdparty\argon2\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;CMAKE_INTDIR="Release";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\3rdparty\argon2\..\..;C:\xmrig-6.16.2\src\3rdparty\argon2\lib;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\3rdparty\argon2\..\..;C:\xmrig-6.16.2\src\3rdparty\argon2\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\3rdparty\argon2\..\..;C:\xmrig-6.16.2\src\3rdparty\argon2\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\3rdparty\argon2\..\..;C:\xmrig-6.16.2\src\3rdparty\argon2\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;CMAKE_INTDIR="MinSizeRel";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\3rdparty\argon2\..\..;C:\xmrig-6.16.2\src\3rdparty\argon2\lib;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\3rdparty\argon2\..\..;C:\xmrig-6.16.2\src\3rdparty\argon2\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\3rdparty\argon2\..\..;C:\xmrig-6.16.2\src\3rdparty\argon2\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;RELWITHDEBINFO;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;RELWITHDEBINFO;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\3rdparty\argon2\..\..;C:\xmrig-6.16.2\src\3rdparty\argon2\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;RELWITHDEBINFO;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;CMAKE_INTDIR="RelWithDebInfo";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\3rdparty\argon2\..\..;C:\xmrig-6.16.2\src\3rdparty\argon2\lib;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\3rdparty\argon2\..\..;C:\xmrig-6.16.2\src\3rdparty\argon2\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\xmrig-6.16.2\src\3rdparty\argon2\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/xmrig-6.16.2/src/3rdparty/argon2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/xmrig-6.16.2 -BC:/xmrig-6.16.2/build --check-stamp-file C:/xmrig-6.16.2/build/src/3rdparty/argon2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\xmrig-6.16.2\build\src\3rdparty\argon2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/xmrig-6.16.2/src/3rdparty/argon2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/xmrig-6.16.2 -BC:/xmrig-6.16.2/build --check-stamp-file C:/xmrig-6.16.2/build/src/3rdparty/argon2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\xmrig-6.16.2\build\src\3rdparty\argon2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/xmrig-6.16.2/src/3rdparty/argon2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/xmrig-6.16.2 -BC:/xmrig-6.16.2/build --check-stamp-file C:/xmrig-6.16.2/build/src/3rdparty/argon2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\xmrig-6.16.2\build\src\3rdparty\argon2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/xmrig-6.16.2/src/3rdparty/argon2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/xmrig-6.16.2 -BC:/xmrig-6.16.2/build --check-stamp-file C:/xmrig-6.16.2/build/src/3rdparty/argon2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\xmrig-6.16.2\build\src\3rdparty\argon2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\xmrig-6.16.2\src\3rdparty\argon2\lib\argon2.c" />
+    <ClCompile Include="C:\xmrig-6.16.2\src\3rdparty\argon2\lib\core.c" />
+    <ClCompile Include="C:\xmrig-6.16.2\src\3rdparty\argon2\lib\encoding.c" />
+    <ClCompile Include="C:\xmrig-6.16.2\src\3rdparty\argon2\lib\genkat.c" />
+    <ClCompile Include="C:\xmrig-6.16.2\src\3rdparty\argon2\lib\impl-select.c" />
+    <ClCompile Include="C:\xmrig-6.16.2\src\3rdparty\argon2\lib\blake2\blake2.c" />
+    <ClCompile Include="C:\xmrig-6.16.2\src\3rdparty\argon2\arch\x86_64\lib\argon2-arch.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\xmrig-6.16.2\build\ZERO_CHECK.vcxproj">
+      <Project>{2FEC5406-1107-32FD-9A12-C8132FBF39C1}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\xmrig-6.16.2\build\src\3rdparty\argon2\argon2-avx2.vcxproj">
+      <Project>{DEE67116-2FE9-3F01-BA5B-2F6041939C4C}</Project>
+      <Name>argon2-avx2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\xmrig-6.16.2\build\src\3rdparty\argon2\argon2-avx512f.vcxproj">
+      <Project>{8B98DB51-B3F3-3356-A513-7FBADD5F430B}</Project>
+      <Name>argon2-avx512f</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\xmrig-6.16.2\build\src\3rdparty\argon2\argon2-sse2.vcxproj">
+      <Project>{BC3C6D04-F25A-341D-8B7E-5EE29C678BD0}</Project>
+      <Name>argon2-sse2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\xmrig-6.16.2\build\src\3rdparty\argon2\argon2-ssse3.vcxproj">
+      <Project>{65A225F2-8B6B-34C3-B6A2-7F8E67BB27FC}</Project>
+      <Name>argon2-ssse3</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\xmrig-6.16.2\build\src\3rdparty\argon2\argon2-xop.vcxproj">
+      <Project>{768C5D3A-27FC-36F7-ACB5-B3598F313C8C}</Project>
+      <Name>argon2-xop</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

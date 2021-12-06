@@ -1,0 +1,8 @@
+﻿  Building Custom Rule C:/xmrig-6.16.2/src/3rdparty/libethash/CMakeLists.txt
+  ethash_internal.c
+C:\xmrig-6.16.2\src\3rdparty\libethash\ethash_internal.c(157,18): warning C4244: 'return': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\3rdparty\libethash\ethash_internal.c(156,1): warning C4244: 'initializing': conversion from 'uint64_t' to 'const uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\3rdparty\libethash\ethash_internal.c(205,4): warning C4133: 'function': incompatible types - from 'const node *' to 'const char *'
+  keccakf800.c
+C:\xmrig-6.16.2\src\3rdparty\libethash\ethash_internal.c(337,1): warning C4028: formal parameter 3 different from declaration
+  ethash.vcxproj -> C:\xmrig-6.16.2\build\src\3rdparty\libethash\Release\ethash.lib

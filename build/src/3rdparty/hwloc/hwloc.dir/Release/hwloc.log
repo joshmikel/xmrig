@@ -1,0 +1,26 @@
+﻿  Building Custom Rule C:/xmrig-6.16.2/src/3rdparty/hwloc/CMakeLists.txt
+  base64.c
+  bind.c
+  bitmap.c
+  components.c
+  diff.c
+  distances.c
+  misc.c
+  pci-common.c
+  shmem.c
+  topology.c
+  topology-noos.c
+  topology-synthetic.c
+  topology-windows.c
+C:\xmrig-6.16.2\src\3rdparty\hwloc\src\topology-windows.c(1029,1): warning C4996: 'GetVersionExA': was declared deprecated
+  topology-x86.c
+  topology-xml.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\sysinfoapi.h(387): message : see declaration of 'GetVersionExA'
+  topology-xml-nolibxml.c
+  traversal.c
+  memattrs.c
+  cpukinds.c
+C:\xmrig-6.16.2\src\3rdparty\hwloc\src\topology-xml.c(246,43): warning C4244: '=': conversion from 'unsigned long' to 'unsigned char', possible loss of data
+  Generating Code...
+C:\xmrig-6.16.2\src\3rdparty\hwloc\src\cpukinds.c(448,45): warning C4244: 'return': conversion from 'const hwloc_uint64_t' to 'int', possible loss of data
+  hwloc.vcxproj -> C:\xmrig-6.16.2\build\src\3rdparty\hwloc\Release\hwloc.lib

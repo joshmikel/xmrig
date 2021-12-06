@@ -1,0 +1,434 @@
+﻿  Building Custom Rule C:/xmrig-6.16.2/CMakeLists.txt
+  Assembling C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86_static.asm...
+  Assembling C:\xmrig-6.16.2\src\crypto\astrobwt\sha3_256_avx2.asm...
+  CpuLaunchData.cpp
+  HashAesKernel.cpp
+  format.cc
+  Algorithm.cpp
+  Coin.cpp
+  keccak.cpp
+  sha3.cpp
+  Async.cpp
+  Console.cpp
+  Env.cpp
+  Json.cpp
+  JsonChain.cpp
+  JsonRequest.cpp
+  ConsoleLog.cpp
+  FileLog.cpp
+  FileLogWriter.cpp
+C:\xmrig-6.16.2\src\base\crypto\sha3.cpp(146,42): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\xmrig-6.16.2\src\base\io\log\FileLogWriter.cpp(77,52): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  Log.cpp
+  Tags.cpp
+  Signals.cpp
+  Watcher.cpp
+  Compiling...
+  Base.cpp
+  BaseConfig.cpp
+  BaseTransform.cpp
+  Title.cpp
+  Entry.cpp
+  Platform.cpp
+  Process.cpp
+  Dns.cpp
+  DnsConfig.cpp
+  DnsRecord.cpp
+  DnsRecords.cpp
+  DnsUvBackend.cpp
+  BaseClient.cpp
+  Client.cpp
+  Job.cpp
+  NetworkState.cpp
+C:\xmrig-6.16.2\src\base\io\log\FileLogWriter.cpp(93,41): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\xmrig-6.16.2\src\base\net\stratum\NetworkState.cpp(50,76): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Pool.cpp
+  Pools.cpp
+  ProxyUrl.cpp
+  Socks5.cpp
+C:\xmrig-6.16.2\src\base\net\stratum\NetworkState.cpp(163,45): warning C4267: 'argument': conversion from 'size_t' to 'rapidjson::SizeType', possible loss of data
+  Compiling...
+  FailoverStrategy.cpp
+  SinglePoolStrategy.cpp
+  Url.cpp
+  LineReader.cpp
+  NetBuffer.cpp
+  Arguments.cpp
+  Chrono.cpp
+  BlockTemplate.cpp
+  Signatures.cpp
+C:\xmrig-6.16.2\src\base\net\stratum\Socks5.cpp(107,81): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\xmrig-6.16.2\src\crypto/randomx/blake2/blake2.h(82,46): warning C4804: '/': unsafe use of type 'bool' in operation
+C:\xmrig-6.16.2\src\crypto/randomx/blake2/blake2.h(85,2): warning C4804: '/': unsafe use of type 'bool' in operation
+  WalletAddress.cpp
+C:\xmrig-6.16.2\src\base\tools\cryptonote\Signatures.cpp(58,78): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\xmrig-6.16.2\src\base\tools\cryptonote\WalletAddress.cpp(48,60): warning C4267: '=': conversion from 'size_t' to 'int8_t', possible loss of data
+  Cvt.cpp
+  String.cpp
+  Timer.cpp
+  AutoClient.cpp
+C:\xmrig-6.16.2\src\base\tools\cryptonote\WalletAddress.cpp(59,38): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  EthStratumClient.cpp
+  BenchClient.cpp
+  BenchConfig.cpp
+  Httpd.cpp
+  ApiRequest.cpp
+  HttpApiRequest.cpp
+  Compiling...
+  Fetch.cpp
+  HttpApiResponse.cpp
+  HttpClient.cpp
+  HttpContext.cpp
+C:\xmrig-6.16.2\src\base\net\stratum\AutoClient.cpp(60,36): warning C4101: 'ex': unreferenced local variable
+  HttpData.cpp
+  HttpListener.cpp
+  HttpResponse.cpp
+  DaemonClient.cpp
+  SelfSelectClient.cpp
+  TcpServer.cpp
+  Hashrate.cpp
+  Threads.cpp
+  Worker.cpp
+  Workers.cpp
+  Benchmark.cpp
+  BenchState.cpp
+C:\xmrig-6.16.2\src\base\net\http\HttpContext.cpp(49,1): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  HashrateInterpolator.cpp
+  GpuWorker.cpp
+  Cpu.cpp
+  CpuBackend.cpp
+  Compiling...
+  CpuConfig.cpp
+  CpuThread.cpp
+  CpuThreads.cpp
+  CpuWorker.cpp
+C:\xmrig-6.16.2\src\backend\common\benchmark\BenchState.cpp(81,36): warning C4101: 'ex': unreferenced local variable
+C:\xmrig-6.16.2\src\backend\cpu\CpuWorker.cpp(322,1): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\backend\cpu\CpuWorker.cpp(245): message : while compiling class template member function 'void xmrig::CpuWorker<1>::start(void)'
+C:\xmrig-6.16.2\src\backend/cpu/CpuWorker.h(115): message : see reference to class template instantiation 'xmrig::CpuWorker<1>' being compiled
+C:\xmrig-6.16.2\src\backend\cpu\CpuWorker.cpp(501,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\xmrig-6.16.2\src\backend\cpu\CpuWorker.cpp(494): message : while compiling class template member function 'void xmrig::CpuWorker<1>::allocateCnCtx(void)'
+  HwlocCpuInfo.cpp
+  BasicCpuInfo.cpp
+  OclSource.cpp
+  ocl_generic_cn_generator.cpp
+  ocl_vega_cn_generator.cpp
+  Cn0Kernel.cpp
+  Cn1Kernel.cpp
+  Cn2Kernel.cpp
+  CnBranchKernel.cpp
+  OclBackend.cpp
+C:\xmrig-6.16.2\src\backend\cpu\CpuWorker.cpp(164): message : see reference to function template instantiation 'void xmrig::CpuWorker<1>::allocateCnCtx(void)' being compiled
+C:\xmrig-6.16.2\src\backend\opencl\OclBackend.cpp(219,53): warning C4244: 'initializing': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+  OclCache.cpp
+  OclConfig.cpp
+  OclLaunchData.cpp
+  OclThread.cpp
+C:\xmrig-6.16.2\src\backend\opencl\OclBackend.cpp(219,38): warning C4244: 'initializing': conversion from 'uint64_t' to 'const uint32_t', possible loss of data
+  OclThreads.cpp
+  OclWorker.cpp
+C:\xmrig-6.16.2\src\backend\opencl\OclThread.cpp(132,48): warning C4267: 'argument': conversion from 'size_t' to 'rapidjson::SizeType', possible loss of data
+C:\xmrig-6.16.2\src\backend\opencl\OclWorker.cpp(194,16): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+  Compiling...
+  OclBaseRunner.cpp
+  OclCnRunner.cpp
+C:\xmrig-6.16.2\src\backend\opencl\OclWorker.cpp(215,57): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto/cn/CnAlgo.h(122,1): warning C4267: 'return': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto/cn/CnAlgo.h(99): message : while compiling class template member function 'uint32_t xmrig::CnAlgo<xmrig::Algorithm::INVALID>::mask(xmrig::Algorithm::Id)'
+C:\xmrig-6.16.2\src\backend\opencl\runners\OclCnRunner.cpp(45): message : see reference to function template instantiation 'uint32_t xmrig::CnAlgo<xmrig::Algorithm::INVALID>::mask(xmrig::Algorithm::Id)' being compiled
+  OclCnR.cpp
+  OclSharedData.cpp
+  OclSharedState.cpp
+  OclContext.cpp
+  OclDevice.cpp
+  OclError.cpp
+  OclKernel.cpp
+  OclLib.cpp
+C:\xmrig-6.16.2\src\backend\opencl\runners\OclCnRunner.cpp(44): message : see reference to class template instantiation 'xmrig::CnAlgo<xmrig::Algorithm::INVALID>' being compiled
+  OclPlatform.cpp
+C:\xmrig-6.16.2\src\backend\opencl\wrappers\OclLib.cpp(241,30): warning C4101: 'ex': unreferenced local variable
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xmemory(758,1): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(638): message : see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,size_t&,_cl_device_id*&,_cl_platform_id*>(_Alloc &,_Objty *const ,size_t &,_cl_device_id *&,_cl_platform_id *&&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(638): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(638): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(638): message :             _Alloc=std::allocator<xmrig::OclDevice>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(638): message :             _Ty=xmrig::OclDevice,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(638): message :             _Objty=xmrig::OclDevice
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(638): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(638): message : see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,size_t&,_cl_device_id*&,_cl_platform_id*>(_Alloc &,_Objty *const ,size_t &,_cl_device_id *&,_cl_platform_id *&&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(638): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(638): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(638): message :             _Alloc=std::allocator<xmrig::OclDevice>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(638): message :             _Ty=xmrig::OclDevice,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(638): message :             _Objty=xmrig::OclDevice
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(638): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(656): message : see reference to function template instantiation 'void std::vector<xmrig::OclDevice,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<size_t&,_cl_device_id*&,_cl_platform_id*>(size_t &,_cl_device_id *&,_cl_platform_id *&&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(656): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(656): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(656): message :             _Ty=xmrig::OclDevice
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector(656): message :         ]
+  OclCache_win.cpp
+  ocl_generic_rx_generator.cpp
+  Blake2bHashRegistersKernel.cpp
+  Blake2bInitialHashKernel.cpp
+C:\xmrig-6.16.2\src\backend\opencl\wrappers\OclPlatform.cpp(105): message : see reference to function template instantiation 'void std::vector<xmrig::OclDevice,std::allocator<_Ty>>::emplace_back<size_t&,_cl_device_id*&,cl_platform_id>(size_t &,_cl_device_id *&,cl_platform_id &&)' being compiled
+C:\xmrig-6.16.2\src\backend\opencl\wrappers\OclPlatform.cpp(105): message :         with
+C:\xmrig-6.16.2\src\backend\opencl\wrappers\OclPlatform.cpp(105): message :         [
+C:\xmrig-6.16.2\src\backend\opencl\wrappers\OclPlatform.cpp(105): message :             _Ty=xmrig::OclDevice
+C:\xmrig-6.16.2\src\backend\opencl\wrappers\OclPlatform.cpp(105): message :         ]
+C:\xmrig-6.16.2\src\backend\opencl\kernels\rx\Blake2bInitialHashKernel.cpp(49,28): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+  ExecuteVmKernel.cpp
+  FillAesKernel.cpp
+  FindSharesKernel.cpp
+  InitVmKernel.cpp
+  RxJitKernel.cpp
+  Compiling...
+  RxRunKernel.cpp
+  OclRxBaseRunner.cpp
+  OclRxJitRunner.cpp
+  OclRxVmRunner.cpp
+  ocl_generic_astrobwt_generator.cpp
+  AstroBWT_FilterKernel.cpp
+  AstroBWT_FindSharesKernel.cpp
+  AstroBWT_MainKernel.cpp
+  AstroBWT_PrepareBatch2Kernel.cpp
+  AstroBWT_Salsa20Kernel.cpp
+  AstroBWT_SHA3InitialKernel.cpp
+  AstroBWT_SHA3Kernel.cpp
+  OclAstroBWTRunner.cpp
+  ocl_generic_kawpow_generator.cpp
+  KawPow_CalculateDAGKernel.cpp
+  OclKawPowRunner.cpp
+C:\xmrig-6.16.2\src\backend\opencl\kernels\rx\Blake2bInitialHashKernel.cpp(49,28): warning C4267: 'initializing': conversion from 'size_t' to 'const uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\backend\opencl\runners\OclKawPowRunner.cpp(103,48): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\backend\opencl\runners\OclKawPowRunner.cpp(117,74): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\backend\opencl\runners\OclKawPowRunner.cpp(150,45): warning C4244: 'initializing': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\backend\opencl\runners\OclKawPowRunner.cpp(150,34): warning C4244: 'initializing': conversion from 'uint64_t' to 'const uint32_t', possible loss of data
+  OclKawPow.cpp
+  AdlLib.cpp
+C:\xmrig-6.16.2\src\backend\opencl\runners\OclKawPowRunner.cpp(151,105): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\backend\opencl\wrappers\AdlLib.cpp(265,61): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\xmrig-6.16.2\src\backend\opencl\wrappers\AdlLib.cpp(239,30): warning C4101: 'ex': unreferenced local variable
+  CudaBackend.cpp
+C:\xmrig-6.16.2\src\backend\opencl\wrappers\AdlLib.cpp(246,30): warning C4101: 'ex': unreferenced local variable
+C:\xmrig-6.16.2\src\backend\cuda\CudaBackend.cpp(235,53): warning C4244: 'initializing': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+  CudaConfig.cpp
+  Compiling...
+  CudaLaunchData.cpp
+  CudaThread.cpp
+  CudaThreads.cpp
+  CudaWorker.cpp
+C:\xmrig-6.16.2\src\backend\cuda\CudaBackend.cpp(235,38): warning C4244: 'initializing': conversion from 'uint64_t' to 'const uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\backend\cuda\CudaWorker.cpp(163,16): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+  CudaBaseRunner.cpp
+  CudaCnRunner.cpp
+  CudaDevice.cpp
+  CudaLib.cpp
+  NvmlLib.cpp
+C:\xmrig-6.16.2\src\backend\cuda\CudaWorker.cpp(184,55): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+  CudaRxRunner.cpp
+C:\xmrig-6.16.2\src\backend\cuda\wrappers\NvmlLib.cpp(206,30): warning C4101: 'ex': unreferenced local variable
+  CudaAstroBWTRunner.cpp
+C:\xmrig-6.16.2\src\backend\cuda\runners\CudaRxRunner.cpp(64,117): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\backend\cuda\runners\CudaAstroBWTRunner.cpp(64,45): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+  CudaKawPowRunner.cpp
+C:\xmrig-6.16.2\src\backend\cuda\runners\CudaAstroBWTRunner.cpp(64,45): warning C4267: 'initializing': conversion from 'size_t' to 'const uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\backend\cuda\runners\CudaKawPowRunner.cpp(52,35): warning C4244: 'initializing': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\backend\cuda\runners\CudaKawPowRunner.cpp(52,26): warning C4244: 'initializing': conversion from 'uint64_t' to 'const uint32_t', possible loss of data
+  App.cpp
+  Config.cpp
+  ConfigTransform.cpp
+  Controller.cpp
+  Miner.cpp
+C:\xmrig-6.16.2\src\backend\cuda\runners\CudaKawPowRunner.cpp(62,127): warning C4244: 'argument': conversion from 'const uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto/randomx/blake2/blake2.h(82,46): warning C4804: '/': unsafe use of type 'bool' in operation
+  Taskbar.cpp
+  JobResults.cpp
+C:\xmrig-6.16.2\src\crypto/randomx/blake2/blake2.h(85,2): warning C4804: '/': unsafe use of type 'bool' in operation
+C:\xmrig-6.16.2\src\net\JobResults.cpp(125,43): warning C4267: '+=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\net\JobResults.cpp(145,39): warning C4267: '+=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\net\JobResults.cpp(162,59): warning C4244: 'argument': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+  Network.cpp
+  Compiling...
+  DonateStrategy.cpp
+  Summary.cpp
+  xmrig.cpp
+  HwApi.cpp
+  DmiBoard.cpp
+  DmiMemory.cpp
+  DmiReader.cpp
+C:\xmrig-6.16.2\src\net\JobResults.cpp(163,70): warning C4244: 'argument': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+  DmiTools.cpp
+  DmiReader_win.cpp
+C:\xmrig-6.16.2\src\hw\dmi\DmiReader.cpp(60,46): warning C4267: 'argument': conversion from 'size_t' to 'rapidjson::SizeType', possible loss of data
+C:\xmrig-6.16.2\src\hw\dmi\DmiReader_win.cpp(40,30): warning C4200: nonstandard extension used: zero-sized array in struct/union
+  Json_win.cpp
+  Platform_win.cpp
+  Process_win.cpp
+  Platform_hwloc.cpp
+  App_win.cpp
+  VirtualMemory_win.cpp
+  CnCtx.cpp
+  CnHash.cpp
+  HugePagesInfo.cpp
+  MemoryPool.cpp
+  Nonce.cpp
+C:\xmrig-6.16.2\src\hw\dmi\DmiReader_win.cpp(40,30): message : This member will be ignored by a defaulted constructor or copy/move assignment operator
+  Compiling...
+  VirtualMemory.cpp
+  CryptoNight_x86_vaes.cpp
+  NUMAMemoryPool.cpp
+  VirtualMemory_hwloc.cpp
+  aes_hash.cpp
+C:\xmrig-6.16.2\src\crypto\common\Nonce.cpp(56,37): warning C4244: '=': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto/randomx/blake2/blake2.h(82,46): warning C4804: '/': unsafe use of type 'bool' in operation
+  allocator.cpp
+  blake2_generator.cpp
+C:\xmrig-6.16.2\src\crypto/randomx/blake2/blake2.h(85,2): warning C4804: '/': unsafe use of type 'bool' in operation
+C:\xmrig-6.16.2\src\crypto/randomx/blake2/blake2.h(82,46): warning C4804: '/': unsafe use of type 'bool' in operation
+  bytecode_machine.cpp
+  dataset.cpp
+C:\xmrig-6.16.2\src\crypto/randomx/blake2/blake2.h(85,2): warning C4804: '/': unsafe use of type 'bool' in operation
+  instructions_portable.cpp
+C:\xmrig-6.16.2\src\crypto/randomx/jit_compiler_x86.hpp(143,1): warning C4267: '+=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\instructions_portable.cpp(63,6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  randomx.cpp
+C:\xmrig-6.16.2\src\crypto\randomx\instructions_portable.cpp(70,6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\xmrig-6.16.2\src\crypto/randomx/jit_compiler_x86.hpp(143,1): warning C4267: '+=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto/randomx/blake2/blake2.h(82,46): warning C4804: '/': unsafe use of type 'bool' in operation
+C:\xmrig-6.16.2\src\crypto/randomx/blake2/blake2.h(85,2): warning C4804: '/': unsafe use of type 'bool' in operation
+C:\xmrig-6.16.2\src\crypto\randomx\randomx.cpp(181,41): warning C4244: '=': conversion from '__int64' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\randomx.cpp(187,41): warning C4244: '=': conversion from '__int64' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\randomx.cpp(396,26): warning C4101: 'ex': unreferenced local variable
+C:\xmrig-6.16.2\src\crypto\randomx\randomx.cpp(493,50): warning C4291: 'void *randomx::CompiledLightVm<1>::operator new(size_t,void *)': no matching operator delete found; memory will not be freed if initialization throws an exception
+C:\xmrig-6.16.2\src\crypto/randomx/vm_compiled_light.hpp(40): message : see declaration of 'randomx::CompiledLightVm<1>::operator new'
+C:\xmrig-6.16.2\src\crypto\randomx\randomx.cpp(498,45): warning C4291: 'void *randomx::CompiledVm<1>::operator new(size_t,void *)': no matching operator delete found; memory will not be freed if initialization throws an exception
+C:\xmrig-6.16.2\src\crypto/randomx/vm_compiled.hpp(45): message : see declaration of 'randomx::CompiledVm<1>::operator new'
+C:\xmrig-6.16.2\src\crypto\randomx\randomx.cpp(513,50): warning C4291: 'void *randomx::CompiledLightVm<0>::operator new(size_t,void *)': no matching operator delete found; memory will not be freed if initialization throws an exception
+C:\xmrig-6.16.2\src\crypto/randomx/vm_compiled_light.hpp(40): message : see declaration of 'randomx::CompiledLightVm<0>::operator new'
+C:\xmrig-6.16.2\src\crypto\randomx\randomx.cpp(518,45): warning C4291: 'void *randomx::CompiledVm<0>::operator new(size_t,void *)': no matching operator delete found; memory will not be freed if initialization throws an exception
+C:\xmrig-6.16.2\src\crypto/randomx/vm_compiled.hpp(45): message : see declaration of 'randomx::CompiledVm<0>::operator new'
+  soft_aes.cpp
+  superscalar.cpp
+C:\xmrig-6.16.2\src\crypto\randomx\randomx.cpp(537,26): warning C4101: 'ex': unreferenced local variable
+  virtual_machine.cpp
+C:\xmrig-6.16.2\src\crypto\randomx\superscalar.cpp(154,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\xmrig-6.16.2\src\crypto/randomx/blake2/blake2.h(82,46): warning C4804: '/': unsafe use of type 'bool' in operation
+C:\xmrig-6.16.2\src\crypto/randomx/blake2/blake2.h(85,2): warning C4804: '/': unsafe use of type 'bool' in operation
+  virtual_memory.cpp
+  vm_compiled_light.cpp
+C:\xmrig-6.16.2\src\crypto\randomx\virtual_machine.cpp(84,29): warning C4244: '=': conversion from 'uint64_t' to 'randomx::addr_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto/randomx/jit_compiler_x86.hpp(143,1): warning C4267: '+=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\vm_compiled_light.cpp(58,50): warning C4244: 'argument': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\vm_compiled_light.cpp(50): message : while compiling class template member function 'void randomx::CompiledLightVm<1>::run(void *)'
+C:\xmrig-6.16.2\src\crypto\randomx\vm_compiled_light.cpp(64): message : see reference to class template instantiation 'randomx::CompiledLightVm<1>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\type_traits(56): message : see reference to class template instantiation 'std::integral_constant<bool,true>' being compiled
+  vm_compiled.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\type_traits(56): message : see reference to class template instantiation 'std::conjunction<_Traits...>' being compiled
+C:\xmrig-6.16.2\src\crypto/randomx/jit_compiler_x86.hpp(143,1): warning C4267: '+=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto/randomx/blake2/blake2.h(82,46): warning C4804: '/': unsafe use of type 'bool' in operation
+  vm_interpreted_light.cpp
+C:\xmrig-6.16.2\src\crypto/randomx/blake2/blake2.h(85,2): warning C4804: '/': unsafe use of type 'bool' in operation
+C:\xmrig-6.16.2\src\crypto\randomx\vm_interpreted_light.cpp(42,23): warning C4244: 'initializing': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\vm_interpreted_light.cpp(41): message : while compiling class template member function 'void randomx::InterpretedLightVm<1>::datasetRead(uint64_t,randomx::int_reg_t (&)[8])'
+C:\xmrig-6.16.2\src\crypto\randomx\vm_interpreted_light.cpp(52): message : see reference to class template instantiation 'randomx::InterpretedLightVm<1>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\type_traits(56): message : see reference to class template instantiation 'std::integral_constant<bool,true>' being compiled
+  vm_interpreted.cpp
+  Rx.cpp
+  Compiling...
+  RxAlgo.cpp
+  RxBasicStorage.cpp
+  RxCache.cpp
+  RxConfig.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\type_traits(56): message : see reference to class template instantiation 'std::conjunction<_Traits...>' being compiled
+C:\xmrig-6.16.2\src\crypto\rx\RxConfig.cpp(147,52): warning C4267: 'argument': conversion from 'size_t' to 'rapidjson::SizeType', possible loss of data
+  RxDataset.cpp
+C:\xmrig-6.16.2\src\crypto\rx\RxConfig.cpp(213,34): warning C4267: 'return': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\rx\RxDataset.cpp(108,55): warning C4244: 'initializing': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\rx\RxDataset.cpp(108,30): warning C4244: 'initializing': conversion from 'uint64_t' to 'const uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\rx\RxDataset.cpp(109,61): warning C4244: 'initializing': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\rx\RxDataset.cpp(109,30): warning C4244: 'initializing': conversion from 'uint64_t' to 'const uint32_t', possible loss of data
+  RxQueue.cpp
+  RxVm.cpp
+  jit_compiler_x86.cpp
+C:\xmrig-6.16.2\src\crypto\rx\RxDataset.cpp(118,60): warning C4244: 'argument': conversion from 'const uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto/randomx/jit_compiler_x86.hpp(143,1): warning C4267: '+=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto/randomx/blake2/blake2.h(82,46): warning C4804: '/': unsafe use of type 'bool' in operation
+C:\xmrig-6.16.2\src\crypto/randomx/blake2/blake2.h(85,2): warning C4804: '/': unsafe use of type 'bool' in operation
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(293,31): warning C4244: '=': conversion from '__int64' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(405,55): warning C4244: '=': conversion from '__int64' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(458,27): warning C4244: '+=': conversion from '__int64' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(477,33): warning C4244: 'argument': conversion from '__int64' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(868,31): warning C4244: 'argument': conversion from 'const uint64_t' to 'const uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(873,22): warning C4244: 'argument': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(920,32): warning C4244: 'argument': conversion from 'const uint64_t' to 'const uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(929,36): warning C4244: '=': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(944,32): warning C4244: 'argument': conversion from 'const uint64_t' to 'const uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(968,17): warning C4244: 'argument': conversion from 'uint64_t' to 'uint8_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(982,32): warning C4244: 'argument': conversion from 'const uint64_t' to 'const uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(991,36): warning C4244: '=': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(1049,37): warning C4244: '=': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(1070,31): warning C4244: 'argument': conversion from 'const uint64_t' to 'const uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(1071,22): warning C4244: 'argument': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(1074,37): warning C4244: '=': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(1095,37): warning C4244: '=': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(1116,37): warning C4244: '=': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(376,35): warning C4244: '=': conversion from '__int64' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\randomx\jit_compiler_x86.cpp(395): message : see reference to function template instantiation 'void randomx::JitCompilerX86::generateSuperscalarHash<16>(randomx::SuperscalarProgram (&)[16])' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\type_traits(56): message : see reference to class template instantiation 'std::integral_constant<bool,true>' being compiled
+  RxNUMAStorage.cpp
+  RxFix_win.cpp
+  Msr_win.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\type_traits(56): message : see reference to class template instantiation 'std::conjunction<_Traits...>' being compiled
+C:\xmrig-6.16.2\src\hw\msr\Msr_win.cpp(108,59): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+  RxMsr.cpp
+  Msr.cpp
+  MsrItem.cpp
+  Impl.cpp
+  AstroBWT.cpp
+  Salsa20.cpp
+  KPCache.cpp
+C:\xmrig-6.16.2\src\hw\msr\Msr_win.cpp(142,20): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\xmrig-6.16.2\src\crypto\kawpow\KPCache.cpp(77,47): warning C4244: '=': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\kawpow\KPCache.cpp(91,50): warning C4244: 'initializing': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\kawpow\KPCache.cpp(91,30): warning C4244: 'initializing': conversion from 'uint64_t' to 'const uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\kawpow\KPCache.cpp(92,56): warning C4244: 'initializing': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+  KPHash.cpp
+C:\xmrig-6.16.2\src\crypto\kawpow\KPCache.cpp(92,30): warning C4244: 'initializing': conversion from 'uint64_t' to 'const uint32_t', possible loss of data
+  Tls.cpp
+C:\xmrig-6.16.2\src\crypto\kawpow\KPHash.cpp(274,47): warning C4244: '=': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\base\net\stratum\Tls.cpp(82,32): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Compiling...
+  ServerTls.cpp
+C:\xmrig-6.16.2\src\base\net\stratum\Tls.cpp(102,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\xmrig-6.16.2\src\base\net\tls\ServerTls.cpp(65,32): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  TlsConfig.cpp
+  TlsContext.cpp
+  TlsGen.cpp
+  HttpsClient.cpp
+C:\xmrig-6.16.2\src\base\net\tls\ServerTls.cpp(84,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\xmrig-6.16.2\src\base\net\https\HttpsClient.cpp(97,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  HttpsContext.cpp
+  HttpsServer.cpp
+  Assembly.cpp
+  CryptonightR_gen.cpp
+C:\xmrig-6.16.2\src\base\net\https\HttpsClient.cpp(136,46): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Http.cpp
+  crypto-ops-data.c
+  crypto-ops.c
+  llhttp.c
+  c_blake256.c
+  c_groestl.c
+  c_jh.c
+  c_skein.c
+  blake2b.c
+  reciprocal.c
+  blake2b_sse41.c
+  salsa20_xmm6int-avx2.c
+  api.c
+  http.c
+  Api.cpp
+  CpuLaunchData.obj : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+  Generating code
+  Finished generating code
+  xmrig.vcxproj -> C:\xmrig-6.16.2\build\Release\xmrig.exe

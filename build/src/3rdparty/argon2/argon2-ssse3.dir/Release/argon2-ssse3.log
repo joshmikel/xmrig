@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/xmrig-6.16.2/src/3rdparty/argon2/CMakeLists.txt
+  argon2-ssse3.c
+cl : command line warning D9002: ignoring unknown option '/arch:SSSE3'
+  argon2-ssse3.vcxproj -> C:\xmrig-6.16.2\build\src\3rdparty\argon2\Release\argon2-ssse3.lib

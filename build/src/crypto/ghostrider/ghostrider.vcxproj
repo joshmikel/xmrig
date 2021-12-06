@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{679AF113-5DCB-34B1-98A8-AB7402B40947}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ghostrider</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\xmrig-6.16.2\build\src\crypto\ghostrider\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ghostrider.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ghostrider</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\xmrig-6.16.2\build\src\crypto\ghostrider\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ghostrider.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ghostrider</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\xmrig-6.16.2\build\src\crypto\ghostrider\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ghostrider.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ghostrider</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\xmrig-6.16.2\build\src\crypto\ghostrider\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ghostrider.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ghostrider</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\crypto\ghostrider\.;C:\xmrig-6.16.2\src\crypto\ghostrider\..\..;C:\xmrig-deps-4.1\msvc2019\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;XMRIG_ALGO_ASTROBWT;ASTROBWT_AVX2;XMRIG_ALGO_KAWPOW;XMRIG_ALGO_GHOSTRIDER;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;XMRIG_ALGO_ASTROBWT;ASTROBWT_AVX2;XMRIG_ALGO_KAWPOW;XMRIG_ALGO_GHOSTRIDER;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\crypto\ghostrider\.;C:\xmrig-6.16.2\src\crypto\ghostrider\..\..;C:\xmrig-deps-4.1\msvc2019\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;XMRIG_ALGO_ASTROBWT;ASTROBWT_AVX2;XMRIG_ALGO_KAWPOW;XMRIG_ALGO_GHOSTRIDER;CMAKE_INTDIR="Debug";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\crypto\ghostrider\.;C:\xmrig-6.16.2\src\crypto\ghostrider\..\..;C:\xmrig-deps-4.1\msvc2019\x64\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\crypto\ghostrider\.;C:\xmrig-6.16.2\src\crypto\ghostrider\..\..;C:\xmrig-deps-4.1\msvc2019\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\crypto\ghostrider\.;C:\xmrig-6.16.2\src\crypto\ghostrider\..\..;C:\xmrig-deps-4.1\msvc2019\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;XMRIG_ALGO_ASTROBWT;ASTROBWT_AVX2;XMRIG_ALGO_KAWPOW;XMRIG_ALGO_GHOSTRIDER;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;XMRIG_ALGO_ASTROBWT;ASTROBWT_AVX2;XMRIG_ALGO_KAWPOW;XMRIG_ALGO_GHOSTRIDER;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\crypto\ghostrider\.;C:\xmrig-6.16.2\src\crypto\ghostrider\..\..;C:\xmrig-deps-4.1\msvc2019\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;XMRIG_ALGO_ASTROBWT;ASTROBWT_AVX2;XMRIG_ALGO_KAWPOW;XMRIG_ALGO_GHOSTRIDER;CMAKE_INTDIR="Release";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\crypto\ghostrider\.;C:\xmrig-6.16.2\src\crypto\ghostrider\..\..;C:\xmrig-deps-4.1\msvc2019\x64\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\crypto\ghostrider\.;C:\xmrig-6.16.2\src\crypto\ghostrider\..\..;C:\xmrig-deps-4.1\msvc2019\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\crypto\ghostrider\.;C:\xmrig-6.16.2\src\crypto\ghostrider\..\..;C:\xmrig-deps-4.1\msvc2019\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;XMRIG_ALGO_ASTROBWT;ASTROBWT_AVX2;XMRIG_ALGO_KAWPOW;XMRIG_ALGO_GHOSTRIDER;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;XMRIG_ALGO_ASTROBWT;ASTROBWT_AVX2;XMRIG_ALGO_KAWPOW;XMRIG_ALGO_GHOSTRIDER;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\crypto\ghostrider\.;C:\xmrig-6.16.2\src\crypto\ghostrider\..\..;C:\xmrig-deps-4.1\msvc2019\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;XMRIG_ALGO_ASTROBWT;ASTROBWT_AVX2;XMRIG_ALGO_KAWPOW;XMRIG_ALGO_GHOSTRIDER;CMAKE_INTDIR="MinSizeRel";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\crypto\ghostrider\.;C:\xmrig-6.16.2\src\crypto\ghostrider\..\..;C:\xmrig-deps-4.1\msvc2019\x64\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\crypto\ghostrider\.;C:\xmrig-6.16.2\src\crypto\ghostrider\..\..;C:\xmrig-deps-4.1\msvc2019\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\crypto\ghostrider\.;C:\xmrig-6.16.2\src\crypto\ghostrider\..\..;C:\xmrig-deps-4.1\msvc2019\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;RELWITHDEBINFO;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;XMRIG_ALGO_ASTROBWT;ASTROBWT_AVX2;XMRIG_ALGO_KAWPOW;XMRIG_ALGO_GHOSTRIDER;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;RELWITHDEBINFO;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;XMRIG_ALGO_ASTROBWT;ASTROBWT_AVX2;XMRIG_ALGO_KAWPOW;XMRIG_ALGO_GHOSTRIDER;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\crypto\ghostrider\.;C:\xmrig-6.16.2\src\crypto\ghostrider\..\..;C:\xmrig-deps-4.1\msvc2019\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;RELWITHDEBINFO;XMRIG_64_BIT;RAPIDJSON_SSE2;XMRIG_FEATURE_SSE4_1;XMRIG_OS_WIN;XMRIG_FEATURE_HTTP;XMRIG_FEATURE_API;XMRIG_FEATURE_ENV;XMRIG_FEATURE_BENCHMARK;XMRIG_FEATURE_HWLOC;XMRIG_FEATURE_OPENCL;CL_USE_DEPRECATED_OPENCL_1_2_APIS;CL_TARGET_OPENCL_VERSION=200;XMRIG_STRICT_OPENCL_CACHE;XMRIG_FEATURE_ADL;XMRIG_FEATURE_CUDA;XMRIG_FEATURE_NVML;XMRIG_VAES;XMRIG_MINER_PROJECT;XMRIG_JSON_SINGLE_LINE_ARRAY;__STDC_FORMAT_MACROS;UNICODE;_FILE_OFFSET_BITS=64;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;HAVE_ROTR;XMRIG_ALGO_RANDOMX;XMRIG_FEATURE_MSR;XMRIG_FIX_RYZEN;XMRIG_ALGO_ARGON2;XMRIG_ALGO_ASTROBWT;ASTROBWT_AVX2;XMRIG_ALGO_KAWPOW;XMRIG_ALGO_GHOSTRIDER;CMAKE_INTDIR="RelWithDebInfo";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\crypto\ghostrider\.;C:\xmrig-6.16.2\src\crypto\ghostrider\..\..;C:\xmrig-deps-4.1\msvc2019\x64\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\xmrig-6.16.2\src\3rdparty\hwloc\include;C:\xmrig-6.16.2\src\crypto\ghostrider\.;C:\xmrig-6.16.2\src\crypto\ghostrider\..\..;C:\xmrig-deps-4.1\msvc2019\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\xmrig-6.16.2\src\crypto\ghostrider\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/xmrig-6.16.2/src/crypto/ghostrider/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/xmrig-6.16.2 -BC:/xmrig-6.16.2/build --check-stamp-file C:/xmrig-6.16.2/build/src/crypto/ghostrider/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\xmrig-6.16.2\build\src\crypto\ghostrider\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/xmrig-6.16.2/src/crypto/ghostrider/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/xmrig-6.16.2 -BC:/xmrig-6.16.2/build --check-stamp-file C:/xmrig-6.16.2/build/src/crypto/ghostrider/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\xmrig-6.16.2\build\src\crypto\ghostrider\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/xmrig-6.16.2/src/crypto/ghostrider/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/xmrig-6.16.2 -BC:/xmrig-6.16.2/build --check-stamp-file C:/xmrig-6.16.2/build/src/crypto/ghostrider/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\xmrig-6.16.2\build\src\crypto\ghostrider\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/xmrig-6.16.2/src/crypto/ghostrider/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/xmrig-6.16.2 -BC:/xmrig-6.16.2/build --check-stamp-file C:/xmrig-6.16.2/build/src/crypto/ghostrider/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\xmrig-6.16.2\build\src\crypto\ghostrider\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_types.h" />
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_blake.h" />
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_bmw.h" />
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_cubehash.h" />
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_echo.h" />
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_fugue.h" />
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_groestl.h" />
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_hamsi.h" />
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_jh.h" />
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_keccak.h" />
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_luffa.h" />
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_sha2.h" />
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_shabal.h" />
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_shavite.h" />
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_simd.h" />
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_skein.h" />
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_whirlpool.h" />
+    <ClInclude Include="C:\xmrig-6.16.2\src\crypto\ghostrider\ghostrider.h" />
+    <ClCompile Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_blake.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinSpace</Optimization>
+    </ClCompile>
+    <ClCompile Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_bmw.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinSpace</Optimization>
+    </ClCompile>
+    <ClCompile Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_cubehash.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinSpace</Optimization>
+    </ClCompile>
+    <ClCompile Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_echo.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinSpace</Optimization>
+    </ClCompile>
+    <ClCompile Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_fugue.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinSpace</Optimization>
+    </ClCompile>
+    <ClCompile Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_groestl.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinSpace</Optimization>
+    </ClCompile>
+    <ClCompile Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_hamsi.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinSpace</Optimization>
+    </ClCompile>
+    <ClCompile Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_jh.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinSpace</Optimization>
+    </ClCompile>
+    <ClCompile Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_keccak.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinSpace</Optimization>
+    </ClCompile>
+    <ClCompile Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_luffa.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinSpace</Optimization>
+    </ClCompile>
+    <ClCompile Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_shabal.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinSpace</Optimization>
+    </ClCompile>
+    <ClCompile Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_shavite.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinSpace</Optimization>
+    </ClCompile>
+    <ClCompile Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_simd.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinSpace</Optimization>
+    </ClCompile>
+    <ClCompile Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_sha2.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinSpace</Optimization>
+    </ClCompile>
+    <ClCompile Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_skein.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinSpace</Optimization>
+    </ClCompile>
+    <ClCompile Include="C:\xmrig-6.16.2\src\crypto\ghostrider\sph_whirlpool.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinSpace</Optimization>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Size</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</IntrinsicFunctions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinSpace</Optimization>
+    </ClCompile>
+    <ClCompile Include="C:\xmrig-6.16.2\src\crypto\ghostrider\ghostrider.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\xmrig-6.16.2\build\ZERO_CHECK.vcxproj">
+      <Project>{2FEC5406-1107-32FD-9A12-C8132FBF39C1}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

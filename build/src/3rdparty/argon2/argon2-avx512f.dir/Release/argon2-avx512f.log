@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/xmrig-6.16.2/src/3rdparty/argon2/CMakeLists.txt
+  argon2-avx512f.c
+cl : command line warning D9002: ignoring unknown option '/arch:AVX512F'
+  argon2-avx512f.vcxproj -> C:\xmrig-6.16.2\build\src\3rdparty\argon2\Release\argon2-avx512f.lib

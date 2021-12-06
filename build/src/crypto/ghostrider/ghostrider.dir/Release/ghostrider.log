@@ -1,0 +1,35 @@
+﻿  Building Custom Rule C:/xmrig-6.16.2/src/crypto/ghostrider/CMakeLists.txt
+  sph_blake.c
+  sph_bmw.c
+  sph_cubehash.c
+  sph_echo.c
+  sph_fugue.c
+C:\xmrig-6.16.2\src\crypto\ghostrider\sph_fugue.c(748,2): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\xmrig-6.16.2\src\crypto\ghostrider\sph_fugue.c(809,2): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+  sph_groestl.c
+  sph_hamsi.c
+  sph_jh.c
+  sph_keccak.c
+  sph_luffa.c
+  sph_shabal.c
+  sph_shavite.c
+C:\xmrig-6.16.2\src\crypto\ghostrider\sph_fugue.c(869,2): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\xmrig-6.16.2\src\crypto\ghostrider\sph_shavite.c(1526,40): warning C4267: '+=': conversion from 'size_t' to 'sph_u32', possible loss of data
+C:\xmrig-6.16.2\src\crypto\ghostrider\sph_shavite.c(1546,29): warning C4267: '=': conversion from 'size_t' to 'unsigned char', possible loss of data
+C:\xmrig-6.16.2\src\crypto\ghostrider\sph_shavite.c(1547,29): warning C4267: '=': conversion from 'size_t' to 'unsigned char', possible loss of data
+C:\xmrig-6.16.2\src\crypto\ghostrider\sph_shavite.c(1611,40): warning C4267: '+=': conversion from 'size_t' to 'sph_u32', possible loss of data
+C:\xmrig-6.16.2\src\crypto\ghostrider\sph_shavite.c(1635,30): warning C4267: '=': conversion from 'size_t' to 'unsigned char', possible loss of data
+  sph_simd.c
+C:\xmrig-6.16.2\src\crypto\ghostrider\sph_shavite.c(1636,30): warning C4267: '=': conversion from 'size_t' to 'unsigned char', possible loss of data
+C:\xmrig-6.16.2\src\crypto\ghostrider\sph_simd.c(1638,23): warning C4267: '+=': conversion from 'size_t' to 'u32', possible loss of data
+  sph_sha2.c
+  sph_skein.c
+  sph_whirlpool.c
+C:\xmrig-6.16.2\src\crypto\ghostrider\sph_simd.c(1649,23): warning C4267: '+=': conversion from 'size_t' to 'u32', possible loss of data
+  ghostrider.cpp
+C:\xmrig-6.16.2\src\crypto\ghostrider\ghostrider.cpp(476,48): warning C4244: 'argument': conversion from 'int64_t' to 'unsigned int', possible loss of data
+C:\xmrig-6.16.2\src\crypto\ghostrider\ghostrider.cpp(487,50): warning C4244: 'argument': conversion from 'const int64_t' to 'unsigned int', possible loss of data
+C:\xmrig-6.16.2\src\crypto\ghostrider\ghostrider.cpp(495,40): warning C4244: 'initializing': conversion from 'hwloc_uint64_t' to 'uint32_t', possible loss of data
+C:\xmrig-6.16.2\src\crypto\ghostrider\ghostrider.cpp(500,62): warning C4244: 'argument': conversion from 'const int64_t' to 'unsigned int', possible loss of data
+C:\xmrig-6.16.2\src\crypto\ghostrider\ghostrider.cpp(513,43): warning C4244: 'argument': conversion from 'const int64_t' to 'unsigned int', possible loss of data
+  ghostrider.vcxproj -> C:\xmrig-6.16.2\build\src\crypto\ghostrider\Release\ghostrider.lib
